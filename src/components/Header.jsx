@@ -2,6 +2,7 @@ import { useState } from 'react';
 import logoImg from '../assets/Logo.png';
 
 export default function Header() {
+  const logoSrc = typeof logoImg === 'string' ? logoImg : logoImg.src;
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,7 +13,7 @@ export default function Header() {
     <header className="header-container">
       {/* Brand / Logo */}
       <div className="header-brand">
-        <img src={logoImg} alt="Logo Periferia Subversivx" className="header-logo" />
+        <img src={logoSrc} alt="Logo Periferia Subversivx" className="header-logo" />
         <span className="header-title">PERIFERIA<br />SUBVERSIVX</span>
       </div>
 

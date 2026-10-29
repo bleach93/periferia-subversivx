@@ -65,7 +65,7 @@ export default function About() {
 
       {/* Columna 2: Texto Principal */}
       <div className="about-content">
-        <span className="about-subtitle">SOBRE NOSOTRAS</span>
+        <span className="about-subtitle">SOBRE NOSOTRXS</span>
         <h2 className="about-title">
           UNA COLECTIVA<br />
           DESDE EL MARGEN

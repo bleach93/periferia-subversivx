@@ -1,0 +1,117 @@
+/* ==========================================================================
+   FOOTER / PIE DE PÁGINA
+   ========================================================================== */
+
+.footer-container {
+    width: 100%;
+    background-color: #121016;
+    /* Fondo oscuro que empareja con la sección 'Sobre Nosotras' */
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-top: 1px solid rgba(168, 139, 196, 0.15);
+}
+
+
+/* --------------------------------------------------------------------------
+   1. MARCA Y COPYRIGHT (IZQUIERDA)
+   -------------------------------------------------------------------------- */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.footer-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    color: #A88BC4;
+    /* Púrpura claro pastel */
+    text-transform: uppercase;
+}
+
+.footer-copyright {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: #8C78A5;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. REDES SOCIALES (CENTRO)
+   -------------------------------------------------------------------------- */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.social-link {
+    color: #A88BC4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-link svg {
+    width: 100%;
+    height: 100%;
+}
+
+.social-link:hover {
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+
+/* --------------------------------------------------------------------------
+   3. LEMAS (DERECHA)
+   -------------------------------------------------------------------------- */
+
+.footer-keywords {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    color: #A88BC4;
+    text-transform: uppercase;
+}
+
+.footer-keywords .dot {
+    font-size: 0.6rem;
+    opacity: 0.6;
+}
+
+
+/* --------------------------------------------------------------------------
+   4. ADAPTACIÓN RESPONSIVE
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+        gap: 1.5rem;
+    }
+    .footer-brand {
+        align-items: center;
+    }
+    .footer-keywords {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

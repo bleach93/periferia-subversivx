@@ -1,0 +1,24 @@
+---
+import Header from '../components/Header.jsx';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Periferia Subversivx</title>
+    
+    <!-- Fuente Google Fonts similar a la del diseño -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#E6DCED] min-h-screen">
+    <!-- Componente del Header con hidratación interactiva de React -->
+    <Header client:load />
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+      <h1 class="text-4xl font-bold">Otras formas de existir. Otras formas de resistir.</h1>
+    </main>
+  </body>
+</html>

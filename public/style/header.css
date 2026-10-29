@@ -1,0 +1,243 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+.header-container {
+    width: 100%;
+    background-color: var(--bg-pastel, #E6DCED);
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(74, 46, 109, 0.1);
+}
+
+
+/* Marca / Logo */
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.header-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.header-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 0.95;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+}
+
+
+/* Navegación Desktop */
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.nav-list a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    color: var(--purple-dark, #4A2E6D);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0.2rem 0;
+    transition: color 0.2s ease;
+}
+
+
+/* Subrayado centrado al 120% de ancho */
+
+.nav-list a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -10%;
+    width: 120%;
+    height: 2px;
+    background-color: var(--purple-dark, #4A2E6D);
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+    transform-origin: center;
+}
+
+.nav-list a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* Acciones y Botón Apoya */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.btn-apoya {
+    background-color: var(--purple-dark, #4A2E6D);
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-apoya:hover {
+    background-color: #3B225A;
+    transform: translateY(-1px);
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.social-icons a {
+    color: var(--purple-dark, #4A2E6D);
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.social-icons svg {
+    width: 100%;
+    height: 100%;
+}
+
+.social-icons a:hover {
+    transform: scale(1.15);
+}
+
+
+/* Botón Hamburguesa (Oculto por defecto en desktop) */
+
+.hamburger-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5rem;
+    z-index: 101;
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    background-color: var(--purple-dark, #4A2E6D);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+
+/* Animación a 'X' del botón hamburguesa */
+
+.hamburger-btn.active span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (MÓVIL Y TABLET < 1024px)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 1rem 1.5rem;
+    }
+    .hamburger-btn {
+        display: flex;
+        /* Muestra el botón hamburguesa en pantallas pequeñas */
+    }
+    .header-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-pastel, #E6DCED);
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+        padding: 2rem;
+        box-sizing: border-box;
+        transform: translateX(100%);
+        /* Oculto fuera de pantalla */
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 100;
+    }
+    .header-nav.open {
+        transform: translateX(0);
+        /* Desliza hacia adentro cuando se abre */
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .nav-list a {
+        font-size: 1.4rem;
+        letter-spacing: 0.15em;
+    }
+    .header-actions {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .btn-apoya {
+        font-size: 1.1rem;
+        padding: 0.6rem 1.8rem;
+    }
+    .social-icons a {
+        width: 26px;
+        height: 26px;
+    }
+}

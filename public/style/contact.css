@@ -1,0 +1,167 @@
+/* ==========================================================================
+   SECCIÓN PARTICIPAR / CONTACTO
+   ========================================================================== */
+
+.participate-container {
+    position: relative;
+    width: 100%;
+    background-color: var(--bg-pastel, #E6DCED);
+    /* Fondo lavanda / violeta pastel */
+    padding: 4rem 3rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+
+/* --------------------------------------------------------------------------
+   1. SELLO TIPOGRÁFICO MANUSCRITO (IZQUIERDA)
+   -------------------------------------------------------------------------- */
+
+.participate-badge {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Patrick Hand SC', cursive, sans-serif;
+    color: var(--purple-dark, #4A2E6D);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 0.95;
+    transform: rotate(-7deg);
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.participate-badge .underline {
+    padding-bottom: 2px;
+}
+
+.participate-badge .badge-line {
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--purple-dark, #4A2E6D);
+    border-radius: 999px;
+    margin-top: 6px;
+    transform: rotate(-2deg);
+}
+
+
+/* --------------------------------------------------------------------------
+   2. TEXTO CENTRAL
+   -------------------------------------------------------------------------- */
+
+.participate-content {
+    flex: 1;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.participate-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: var(--purple-dark, #3B2D4A);
+    text-transform: uppercase;
+    margin: 0 0 0.75rem 0;
+    letter-spacing: -0.01em;
+}
+
+.participate-description {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #3B2D4A;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+/* --------------------------------------------------------------------------
+   3. BOTONES EN CÁPSULA (DERECHA)
+   -------------------------------------------------------------------------- */
+
+.participate-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.btn-pill {
+    border: 1.5px solid var(--purple-dark, #4A2E6D);
+    background-color: transparent;
+    color: var(--purple-dark, #4A2E6D);
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    /* Forma de píldora */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.25 ease;
+    white-space: nowrap;
+}
+
+.btn-pill:hover {
+    background-color: var(--purple-dark, #4A2E6D);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(74, 46, 109, 0.15);
+}
+
+.btn-icon {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.2s ease;
+}
+
+.btn-arrow {
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+}
+
+.btn-pill:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+.btn-pill:hover .btn-icon {
+    transform: scale(1.15);
+}
+
+
+/* --------------------------------------------------------------------------
+   4. ADAPTACIÓN RESPONSIVE
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    .participate-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+    }
+    .participate-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .participate-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn-pill {
+        justify-content: center;
+    }
+}

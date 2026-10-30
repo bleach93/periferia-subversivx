@@ -20,7 +20,7 @@ export default function Contact() {
       {/* 3. Botones de acción a la derecha */}
       <div className="participate-actions">
         {/* Botón 1: Donar */}
-        <a href="#donar" className="btn-pill">
+        <a href="https://www.amazon.com.mx/registries/gl/guest-view/2M476IEXK4WK7?ref_=cm_sw_r_cp_ud_ggr-subnav-share_2XWZ4AF0ACTTW5EZG32W&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafG6dEIRreXwYula3r_ojvU2LPKQRGLA1weG98J_mEB-XtqrwZRejhWmcqlqw_aem_UosXWvTbLdMOBqOAPyyPxQ" className="btn-pill" target="_blank" rel="noopener noreferrer">
           <span>DONAR</span>
           <svg className="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>

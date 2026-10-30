@@ -14,7 +14,7 @@ export default function Footer() {
       {/* Columna Central: Redes Sociales */}
       <div className="footer-socials">
         <a 
-          href="https://instagram.com" 
+          href="https://www.instagram.com/periferiasubversivx/" 
           target="_blank" 
           rel="noopener noreferrer" 
           aria-label="Instagram"

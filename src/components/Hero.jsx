@@ -17,9 +17,9 @@ export default function Hero() {
         Tu navegador no soporta videos en HTML5.
       </video>
         <div className="hero-badge-right-text">
-            <span>EL CUIDADO</span>
+            <span>CUIDAR(NOS)</span>
             <span>TAMBIÉN ES</span>
-            <span className="underline">RESISTENCIA</span>
+            <span className="underline">RESISTIR</span>
             
             {/* Rayas decorativas del sticker */}
             <div className="badge-sparks">

@@ -49,7 +49,7 @@ export default function Projects() {
           EN TERRITORIO
         </h2>
         <p className="projects-description">
-          Brigadas, talleres, campañas y acompañamientos en comunidades de Sinaloa y otras regiones.
+          Brigadas, talleres, campañas y acompañamientos en comunidades del sur de Sinaloa.
         </p>
         <a href="#todos-proyectos" className="projects-main-link">
           <span>VER TODOS LOS PROYECTOS</span>

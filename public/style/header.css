@@ -26,8 +26,8 @@
 }
 
 .header-logo {
-    width: 45px;
-    height: 45px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
@@ -35,7 +35,7 @@
     font-family: 'Patrick Hand SC', cursive, sans-serif;
     ;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 0.95;
     color: #111111;
     text-transform: uppercase;
@@ -76,21 +76,25 @@
 
 /* Subrayado centrado al 120% de ancho */
 
-.nav-list a::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: -10%;
-    width: 120%;
-    height: 2px;
-    background-color: var(--purple-dark, #4A2E6D);
-    transform: scaleX(0);
-    transition: transform 0.25s ease;
-    transform-origin: center;
+.nav-list a {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: -10%;
+        width: 120%;
+        height: 2px;
+        background-color: var(--purple-dark, #4A2E6D);
+        transform: scaleX(0);
+        transition: transform 0.25s ease;
+        transform-origin: center;
+    }
 }
 
-.nav-list a:hover::after {
-    transform: scaleX(1);
+.nav-list a {
+    &:hover::after {
+        transform: scaleX(1);
+    }
 }
 
 
@@ -144,8 +148,11 @@
     height: 100%;
 }
 
-.social-icons a:hover {
-    transform: scale(1.15);
+.social-icons a {
+    &:hover {
+        transform: scale(1.15);
+        opacity: 0.85;
+    }
 }
 
 
@@ -174,16 +181,22 @@
 
 /* Animación a 'X' del botón hamburguesa */
 
-.hamburger-btn.active span:nth-child(1) {
-    transform: translateY(7.5px) rotate(45deg);
+.hamburger-btn.active span {
+    &:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+    }
 }
 
-.hamburger-btn.active span:nth-child(2) {
-    opacity: 0;
+.hamburger-btn.active span {
+    &:nth-child(2) {
+        opacity: 0;
+    }
 }
 
-.hamburger-btn.active span:nth-child(3) {
-    transform: translateY(-7.5px) rotate(-45deg);
+.hamburger-btn.active span {
+    &:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
+    }
 }
 
 

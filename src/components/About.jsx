@@ -15,7 +15,7 @@ export default function About() {
     },
     {
       id: 2,
-      title: 'TERRITORIO Y ECOLOGÍA',
+      title: 'DEFENSA Y TERRITORIO',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"></path>
@@ -37,7 +37,7 @@ export default function About() {
     },
     {
       id: 4,
-      title: 'CULTURA Y EDUCACIÓN POPULAR',
+      title: 'AUTO-FORMACIÓN COMUNITARIA',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
@@ -76,7 +76,7 @@ export default function About() {
           de otros mundos posibles.
         </p>
         <a href="#mas-informacion" className="about-link">
-          <span>CONOCE MÁS SOBRE NOSOTRAS</span>
+          <span>CONOCE MÁS SOBRE NOSOTRXS</span>
           <span className="arrow">→</span>
         </a>
       </div>

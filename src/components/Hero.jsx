@@ -43,7 +43,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-description">
-          Somos una colectiva transfeminista, antirracista, decolonial y antifascista. 
+          Somos una colectiva transfeminista. 
           Organizamos desde los márgenes para construir comunidades más justas y libres.
         </p>
 

@@ -1,0 +1,180 @@
+/* ==========================================================================
+   PÁGINA DEDICADA: NOSOTRXS
+   ========================================================================== */
+
+
+/* public/style/nosotrxs.css */
+
+.nosotrxs-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    color: #E6DCED;
+}
+
+
+/* --------------------------------------------------------------------------
+   1. ENCABEZADO
+   -------------------------------------------------------------------------- */
+
+.nosotrxs-header {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nosotrxs-badge {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    color: #A88BC4;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.nosotrxs-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #A88BC4;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: -0.02em;
+}
+
+.nosotrxs-lead {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #D1C5DC;
+    margin: 0;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. MANIFIESTO (ESTILO FANZINE / EDITORIAL)
+   -------------------------------------------------------------------------- */
+
+.manifesto-box {
+    background-color: rgba(18, 16, 22, 0.65);
+    border-left: 3px solid #A88BC4;
+    padding: 2.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    backdrop-filter: blur(6px);
+}
+
+.manifesto-tag {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    color: #A88BC4;
+}
+
+.manifesto-quote {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #E6DCED;
+    margin: 0;
+    font-style: italic;
+}
+
+
+/* --------------------------------------------------------------------------
+   3. GRID DE EJES POLÍTICOS
+   -------------------------------------------------------------------------- */
+
+.axes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.axes-section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+    color: #A88BC4;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.axes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.axis-card {
+    background-color: rgba(18, 16, 22, 0.55);
+    border: 1px solid rgba(168, 139, 196, 0.25);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    backdrop-filter: blur(6px);
+    transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.axis-card:hover {
+    transform: translateY(-4px);
+    border-color: #A88BC4;
+    background-color: rgba(18, 16, 22, 0.75);
+}
+
+.axis-number {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    color: #A88BC4;
+    font-weight: 700;
+}
+
+.axis-card-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.12em;
+    color: #E6DCED;
+    margin: 0;
+}
+
+.axis-card-desc {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #B8A9C9;
+    margin: 0;
+}
+
+
+/* --------------------------------------------------------------------------
+   4. ADAPTACIÓN RESPONSIVE
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .nosotrxs-page {
+        padding: 3rem 1.5rem;
+        gap: 3rem;
+    }
+    .nosotrxs-title {
+        font-size: 2.5rem;
+    }
+    .manifesto-quote {
+        font-size: 1.15rem;
+    }
+    .axes-grid {
+        grid-template-columns: 1fr;
+    }
+}

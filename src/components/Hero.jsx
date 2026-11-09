@@ -47,7 +47,7 @@ export default function Hero() {
           Organizamos desde los márgenes para construir comunidades más justas y libres.
         </p>
 
-        <a href="#proyectos" className="hero-btn">
+        <a href="/proyectos" className="hero-btn">
           <span>CONOCE NUESTROS PROYECTOS</span>
           <span className="btn-arrow">→</span>
         </a>

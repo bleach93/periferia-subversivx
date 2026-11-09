@@ -1,7 +1,14 @@
 import projectsBg from '../assets/projects-bg.png';
+import red from '../assets/red-abortera.jpg';
+import acompanamiento from '../assets/acompaniamiento.jpg'; 
+import salud from '../assets/salud.jpg';
 
 export default function Projects() {
     const bgSrc = typeof projectsBg === 'string' ? projectsBg : projectsBg.src;
+    const redSrc = typeof red === 'string' ? red : red.src;
+    const acompanamientoSrc = typeof acompanamiento === 'string' ? acompanamiento : acompanamiento.src;
+    const saludSrc = typeof salud === 'string' ? salud : salud.src;
+
     const projectsData = [
         {
         id: 1,
@@ -9,25 +16,25 @@ export default function Projects() {
         title: 'Brigada de salud comunitaria en la sierra',
         description: 'Llevamos atención médica, información y acompañamiento a comunidades rurales.',
         date: 'MAR 2025',
-        image: '/projects/brigada.jpg',
-        link: '#',
+        image: saludSrc,
+        link: 'https://www.instagram.com/p/DRvWV1eEruO/?img_index=1',
         },
         {
         id: 2,
         category: 'TALLERES',
-        title: 'Taller de arte y memoria',
-        description: 'Espacios para crear, compartir y sanar desde la expresión colectiva.',
+        title: 'Taller Educacion Socioemocional para la niñez',
+        description: 'Espacios de acompañamiento y contención para niñez desplazada por violencia en la sierra.',
         date: 'FEB 2025',
-        image: '/projects/taller.jpg',
-        link: '#',
+        image: acompanamientoSrc,
+        link: 'https://www.instagram.com/p/DXKrSyQlDii/?img_index=1',
         },
         {
         id: 3,
         category: 'CAMPAÑA',
-        title: 'Contra la violencia de género',
-        description: 'Información, redes de apoyo y acompañamiento en situaciones de riesgo.',
+        title: 'aborto legal, seguro y autogestionado',
+        description: 'Información y acompañamiento humano y amoroso en procesos de aborto.',
         date: 'ENE 2025',
-        image: '/projects/campana.jpg',
+        image: redSrc,
         link: '#',
         },
     ];

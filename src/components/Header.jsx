@@ -41,7 +41,7 @@ export default function Header() {
 
         {/* Acciones y Redes */}
         <div className="header-actions">
-          <a href="/contacto" className="btn-apoya" onClick={() => setMenuOpen(false)}>
+          <a href="https://www.amazon.com.mx/registries/gl/guest-view/2M476IEXK4WK7?ref_=cm_sw_r_cp_ud_ggr-subnav-share_2XWZ4AF0ACTTW5EZG32W&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafG6dEIRreXwYula3r_ojvU2LPKQRGLA1weG98J_mEB-XtqrwZRejhWmcqlqw_aem_UosXWvTbLdMOBqOAPyyPxQ" className="btn-apoya" onClick={() => setMenuOpen(false)} target="_blank">
             APOYA <span className="heart">♡</span>
           </a>
           <div className="social-icons">
